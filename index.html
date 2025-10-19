@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Gohil - Mechanical Design Engineer | Pressure Vessels</title>
+    <title>Umesh Gohil - Mechanical Design Engineer | Pressure Vessels • Heat Exchangers • Storage Tanks</title>
     <style>
         /* Modern Engineering Color Scheme */
         :root {
@@ -183,6 +183,26 @@
             padding: 1.5rem;
         }
         
+        /* Experience Cards */
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .experience-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-date {
+            color: var(--engineering-orange);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
         /* Contact Section */
         #contact {
             text-align: center;
@@ -235,6 +255,11 @@
             .skills-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -244,7 +269,7 @@
         <div class="container">
             <div class="header-content">
                 <h1>Umesh Gohil</h1>
-                <p class="tagline">Mechanical Design Engineer | Pressure Vessels & Static Equipment</p>
+                <p class="tagline">Mechanical Design Engineer | Pressure Vessels • Heat Exchangers • Storage Tanks • Static Equipment</p>
                 <p class="philosophy">"ASME Foundation, Global Application"</p>
             </div>
         </div>
@@ -254,8 +279,10 @@
     <nav>
         <div class="container">
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#global">Global Expertise</a>
             <a href="#projects">Projects</a>
+            <a href="#future">Learning Goals</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -263,36 +290,84 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2>Skills & Tools</h2>
+            <h2>Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Design & Analysis</h3>
+                    <h3>Design Codes & Standards</h3>
                     <ul>
-                        <li>Pressure Vessel Design</li>
-                        <li>Fabrication Drawings</li>
-                        <li>Design Validation</li>
-                        <li>Nozzle Load Checks</li>
-                        <li>MAWP, MDMT, PWHT</li>
+                        <li><strong>ASME Sec VIII Div.1 & Div.2</strong> - Pressure Vessels</li>
+                        <li><strong>TEMA</strong> - Heat Exchangers</li>
+                        <li><strong>API 650</strong> - Storage Tanks</li>
+                        <li>PD 5500, EN 13445, AD 2000</li>
+                        <li>AS 1210, CSA B51, PED</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Software</h3>
+                    <h3>Software & Tools</h3>
                     <ul>
                         <li>PV Elite</li>
                         <li>Autodesk Inventor</li>
                         <li>AutoCAD</li>
                         <li>SolidWorks</li>
                         <li>Autodesk Vault</li>
+                        <li>Oracle Agile PLM</li>
+                        <li>SAP</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Professional</h3>
+                    <h3>Engineering Capabilities</h3>
                     <ul>
-                        <li>Vendor Coordination</li>
-                        <li>MR/TDS Preparation</li>
-                        <li>MDR Preparation</li>
-                        <li>RFI Closure</li>
-                        <li>QA/QC Interaction</li>
+                        <li>Pressure Vessel Design</li>
+                        <li>Heat Exchanger Design</li>
+                        <li>Storage Tank Design</li>
+                        <li>Fabrication Drawings</li>
+                        <li>MDR/MR/TDS Preparation</li>
+                        <li>Vendor & Client Coordination</li>
+                        <li>Design Validation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section-dark">
+        <div class="container">
+            <h2>Professional Journey</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Current Role -->
+                <div class="experience-card">
+                    <h3>GMM Pfaudler</h3>
+                    <p class="experience-date">Officer A / Senior Engineer | Feb 2025 - Present</p>
+                    <ul>
+                        <li>Design pressure vessels & filtration systems per ASME Sec VIII</li>
+                        <li>Validate designs using PV Elite for thickness, MDMT, MAWP, PWHT</li>
+                        <li>Prepare MR/TDS documents and manage vendor coordination</li>
+                        <li>Mentor junior engineers in GD&T and design standards</li>
+                    </ul>
+                </div>
+
+                <!-- Previous Roles -->
+                <div class="experience-card">
+                    <h3>L&T Technology Services</h3>
+                    <p class="experience-date">Engineer | Jan 2022 - Feb 2025</p>
+                    <ul>
+                        <li>Designed pressure vessels, heat exchangers, and columns</li>
+                        <li>Gained hands-on experience with fabrication drawing reviews</li>
+                        <li>Coordinated with international vendors and clients</li>
+                        <li>Managed design changes using Oracle Agile PLM</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Aqseptence Group (Johnson Screen)</h3>
+                    <p class="experience-date">Jr. Design Engineer | Mar 2019 - Dec 2021</p>
+                    <ul>
+                        <li>Designed equipment for oil & gas, water treatment, and mining</li>
+                        <li>Created 3D models and fabrication drawings for international clients</li>
+                        <li>Led team of draughtsmen for static equipment projects</li>
+                        <li>Implemented GD&T to reduce manufacturing costs</li>
                     </ul>
                 </div>
             </div>
@@ -300,7 +375,7 @@
     </section>
 
     <!-- Global Expertise Section -->
-    <section id="global" class="section-dark">
+    <section id="global">
         <div class="container">
             <h2>Global Design Expertise</h2>
             <p style="text-align: center; margin-bottom: 2rem;">My hands-on project experience is rooted in ASME Section VIII, providing a robust foundation for rapid adaptation to international standards.</p>
@@ -316,8 +391,8 @@
                 <tbody>
                     <tr>
                         <td><strong>USA / Global</strong></td>
-                        <td><strong>ASME Sec. VIII, Div. 1</strong></td>
-                        <td>Practical, hands-on project experience</td>
+                        <td><strong>ASME Sec. VIII, Div. 1 & 2</strong></td>
+                        <td>Practical, hands-on project experience with pressure vessels, heat exchangers, and storage tanks</td>
                     </tr>
                     <tr>
                         <td><strong>Canada</strong></td>
@@ -345,7 +420,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="section-dark">
         <div class="container">
             <h2>Project Showcase</h2>
             <div class="projects-grid">
@@ -354,26 +429,55 @@
                         [Sample Image: Pressure Vessel Design]
                     </div>
                     <div class="project-content">
-                        <h3>Pressure Vessel Project</h3>
-                        <p>Designed and validated a pressure vessel using PV Elite and Autodesk Inventor, ensuring compliance with ASME standards.</p>
+                        <h3>Pressure Vessel Design</h3>
+                        <p>Designed and validated pressure vessels using PV Elite and Autodesk Inventor, ensuring compliance with ASME standards.</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        [Sample Image: Fabrication Drawing]
+                        [Sample Image: Heat Exchanger]
                     </div>
                     <div class="project-content">
-                        <h3>Fabrication Package</h3>
-                        <p>Developed complete fabrication drawings and MDR packages for a chemical processing unit.</p>
+                        <h3>Heat Exchanger Projects</h3>
+                        <p>Applied TEMA standards for heat exchanger design and collaborated on fabrication packages.</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        [Sample Image: Global Standards]
+                        [Sample Image: Storage Tank]
                     </div>
                     <div class="project-content">
-                        <h3>International Compliance</h3>
-                        <p>Adapted ASME-based designs to meet European and Australian standards for global clients.</p>
+                        <h3>Storage Tank Design</h3>
+                        <p>Designed storage tanks following API 650 standards for various industrial applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Learning Section -->
+    <section id="future">
+        <div class="container">
+            <h2>Future Learning Goals</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="margin-bottom: 2rem;">I believe in continuous learning and am actively expanding my skills in these areas:</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--primary-blue);">🔄 FEA & CFD</h4>
+                        <p>ANSYS, Nastran for advanced simulation and analysis</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--primary-blue);">🤖 AI & Automation</h4>
+                        <p>AI-driven design optimization and automation tools</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--primary-blue);">💻 Programming</h4>
+                        <p>MATLAB for engineering calculations and automation</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--primary-blue);">🌐 Freelancing</h4>
+                        <p>Building global client relationships and project management</p>
                     </div>
                 </div>
             </div>
@@ -386,9 +490,10 @@
             <h2>Contact Me</h2>
             <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
             <div class="contact-links">
-                <a href="mailto:gohilumesh78@gmail.com">Email</a>
-                <a href="https://linkedin.com/in/umeshg78" target="_blank">LinkedIn</a>
-                <a href="https://github.com/umesh6789" target="_blank">GitHub</a>
+                <a href="mailto:gohilumesh78@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/umeshg78" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/umesh6789" target="_blank">🔗 GitHub</a>
+                <a href="tel:+919725543954">📞 +91-9725543954</a>
             </div>
         </div>
     </section>
@@ -397,6 +502,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Umesh Gohil. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Mechanical Design Engineer | Static Equipment Specialist</p>
         </div>
     </footer>
 </body>
