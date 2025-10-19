@@ -3,53 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Gohil - Mechanical Design Engineer</title>
+    <title>Umesh Gohil - Mechanical Design Engineer | Pressure Vessels</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Modern Engineering Color Scheme */
+        :root {
+            --primary-blue: #2c3e50;
+            --accent-blue: #3498db;
+            --engineering-orange: #e67e22;
+            --light-gray: #ecf0f1;
+            --dark-gray: #34495e;
+            --text-dark: #2c3e50;
+        }
+        
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: white;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
+        
+        /* Header Styles */
         header {
-            background: #2c3e50;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-gray) 100%);
             color: white;
-            padding: 2rem 0;
+            padding: 4rem 0;
             text-align: center;
         }
-        nav {
-            background: #34495e;
-            padding: 1rem 0;
+        
+        .header-content h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
         }
+        
+        .header-content .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .philosophy {
+            font-style: italic;
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--dark-gray);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: center;
+        }
+        
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
+        
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+        
+        /* Section Styles */
         section {
-            padding: 3rem 0;
+            padding: 5rem 0;
         }
+        
+        section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+        
         .section-dark {
+            background: var(--light-gray);
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--engineering-orange);
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Global Expertise Table */
+        .global-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .global-table th, .global-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .global-table th {
+            background: var(--primary-blue);
+            color: white;
+        }
+        
+        .global-table tr:nth-child(even) {
             background: #f8f9fa;
+        }
+        
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            height: 200px;
+            background: var(--dark-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        /* Contact Section */
+        #contact {
+            text-align: center;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-links a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-links a:hover {
+            color: var(--engineering-orange);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            .header-content .tagline {
+                font-size: 1.2rem;
+            }
+            
+            nav .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                margin: 0.5rem 0;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>Umesh Gohil</h1>
-            <p>Mechanical Design Engineer | Pressure Vessels & Static Equipment</p>
+            <div class="header-content">
+                <h1>Umesh Gohil</h1>
+                <p class="tagline">Mechanical Design Engineer | Pressure Vessels & Static Equipment</p>
+                <p class="philosophy">"ASME Foundation, Global Application"</p>
+            </div>
         </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
-        <div class="container" style="text-align: center;">
+        <div class="container">
             <a href="#skills">Skills</a>
             <a href="#global">Global Expertise</a>
             <a href="#projects">Projects</a>
@@ -57,13 +260,141 @@
         </div>
     </nav>
 
-    <section class="container">
-        <h2>Portfolio Coming Soon</h2>
-        <p>This portfolio is currently under development and will showcase my engineering projects and capabilities.</p>
-        <p>In the meantime, please check my <a href="README.md">README</a> for professional information.</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Design & Analysis</h3>
+                    <ul>
+                        <li>Pressure Vessel Design</li>
+                        <li>Fabrication Drawings</li>
+                        <li>Design Validation</li>
+                        <li>Nozzle Load Checks</li>
+                        <li>MAWP, MDMT, PWHT</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Software</h3>
+                    <ul>
+                        <li>PV Elite</li>
+                        <li>Autodesk Inventor</li>
+                        <li>AutoCAD</li>
+                        <li>SolidWorks</li>
+                        <li>Autodesk Vault</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>Vendor Coordination</li>
+                        <li>MR/TDS Preparation</li>
+                        <li>MDR Preparation</li>
+                        <li>RFI Closure</li>
+                        <li>QA/QC Interaction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer style="background: #2c3e50; color: white; text-align: center; padding: 2rem 0;">
+    <!-- Global Expertise Section -->
+    <section id="global" class="section-dark">
+        <div class="container">
+            <h2>Global Design Expertise</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">My hands-on project experience is rooted in ASME Section VIII, providing a robust foundation for rapid adaptation to international standards.</p>
+            
+            <table class="global-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Core Standard (My Experience)</th>
+                        <th>Adaptability & Knowledge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USA / Global</strong></td>
+                        <td><strong>ASME Sec. VIII, Div. 1</strong></td>
+                        <td>Practical, hands-on project experience</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Canada</strong></td>
+                        <td></td>
+                        <td>Proficient in adapting designs to <strong>CSA B51</strong> and the <strong>CRN</strong> registration process</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UK & EU</strong></td>
+                        <td></td>
+                        <td>Familiar with <strong>PD 5500</strong>, <strong>BS EN 13445</strong>, and <strong>PED</strong> compliance requirements</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Germany</strong></td>
+                        <td></td>
+                        <td>Knowledgeable in <strong>EN 13445</strong> and <strong>AD 2000 Merkblatt</strong> for EU market compliance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Australia</strong></td>
+                        <td></td>
+                        <td>Ready to apply <strong>AS 1210</strong> and <strong>AS 4343</strong> hazard classification standards</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Project Showcase</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        [Sample Image: Pressure Vessel Design]
+                    </div>
+                    <div class="project-content">
+                        <h3>Pressure Vessel Project</h3>
+                        <p>Designed and validated a pressure vessel using PV Elite and Autodesk Inventor, ensuring compliance with ASME standards.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        [Sample Image: Fabrication Drawing]
+                    </div>
+                    <div class="project-content">
+                        <h3>Fabrication Package</h3>
+                        <p>Developed complete fabrication drawings and MDR packages for a chemical processing unit.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        [Sample Image: Global Standards]
+                    </div>
+                    <div class="project-content">
+                        <h3>International Compliance</h3>
+                        <p>Adapted ASME-based designs to meet European and Australian standards for global clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-dark">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:gohilumesh78@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/umeshg78" target="_blank">LinkedIn</a>
+                <a href="https://github.com/umesh6789" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <p>&copy; 2024 Umesh Gohil. All rights reserved.</p>
         </div>
