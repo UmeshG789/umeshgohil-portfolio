@@ -236,6 +236,16 @@
             font-weight: bold;
         }
         
+        .certification-badge {
+            background: var(--technical-teal);
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
         /* Enhanced Global Expertise Table */
         .global-table {
             width: 100%;
@@ -379,6 +389,23 @@
             padding: 2rem;
         }
         
+        .case-study-link {
+            display: inline-block;
+            background: var(--technical-teal);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .case-study-link:hover {
+            background: var(--engineering-blue);
+            transform: translateY(-2px);
+        }
+        
         /* Enhanced Contact Section */
         #contact {
             text-align: center;
@@ -500,31 +527,33 @@
                 <div class="skill-category">
                     <h3>Design Codes & Standards</h3>
                     <ul>
-                        <li><strong>ASME Sec VIII Div.1 & Div.2</strong> - Pressure Vessels</li>
-                        <li><strong>TEMA</strong> - Heat Exchangers</li>
-                        <li><strong>API 650</strong> - Storage Tanks</li>
-                        <li>PD 5500, EN 13445, AD 2000</li>
-                        <li>AS 1210, CSA B51, PED</li>
+                        <li><strong>ASME Section VIII Div. 1 & 2</strong></li>
+                        <li><strong>TEMA Standards</strong></li>
+                        <li><strong>API 650</strong></li>
+                        <li><strong>EN 13445</strong></li>
+                        <li><strong>PD 5500</strong></li>
+                        <li><strong>AD 2000 Merkblatt</strong></li>
+                        <li><strong>AS 1210 & AS 4343</strong></li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Engineering Software</h3>
                     <ul>
-                        <li>PV Elite - Design & Analysis</li>
-                        <li>Autodesk Inventor - 3D Modeling</li>
-                        <li>AutoCAD - 2D Drafting</li>
-                        <li>SolidWorks - Mechanical Design</li>
-                        <li>Autodesk Vault - Data Management</li>
+                        <li>PV Elite</li>
+                        <li>Autodesk Inventor</li>
+                        <li>AutoCAD</li>
+                        <li>SolidWorks <span class="certification-badge">Certified</span></li>
+                        <li>Autodesk Vault</li>
                         <li>Oracle Agile PLM</li>
-                        <li>SAP - Enterprise Resource</li>
+                        <li>SAP</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Engineering Capabilities</h3>
                     <ul>
                         <li>Pressure Vessel Design & Validation</li>
-                        <li>Heat Exchanger Design per TEMA</li>
-                        <li>Storage Tank Design per API 650</li>
+                        <li>Heat Exchanger Design</li>
+                        <li>Storage Tank Design</li>
                         <li>Fabrication Drawing Development</li>
                         <li>MDR/MR/TDS Documentation</li>
                         <li>Vendor & Client Coordination</li>
@@ -654,15 +683,21 @@
     <!-- Enhanced Projects Section -->
     <section id="projects" class="section-dark">
         <div class="container">
-            <h2>Engineering Projects</h2>
+            <h2>Engineering Case Studies</h2>
+            <p style="text-align: center; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Detailed engineering analyses with complete design calculations, 3D models, and fabrication considerations. 
+                Case studies demonstrate practical application of engineering principles and problem-solving methodologies.
+            </p>
+            
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         ⚙️
                     </div>
                     <div class="project-content">
-                        <h3>Pressure Vessel Systems</h3>
-                        <p>Comprehensive design and validation of pressure vessels using PV Elite and Autodesk Inventor, ensuring full compliance with ASME standards and client specifications.</p>
+                        <h3>Pressure Vessel Design</h3>
+                        <p>Complete pressure vessel design from concept to fabrication drawings, including stress analysis, nozzle reinforcements, and compliance verification.</p>
+                        <a href="#" class="case-study-link">Case Study Coming Soon</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -670,8 +705,9 @@
                         🔄
                     </div>
                     <div class="project-content">
-                        <h3>Heat Exchange Solutions</h3>
-                        <p>Applied TEMA standards for heat exchanger design and collaborated on complete fabrication packages for chemical processing applications.</p>
+                        <h3>Heat Exchanger Analysis</h3>
+                        <p>TEMA-based heat exchanger design with thermal calculations, mechanical design validation, and fabrication package development.</p>
+                        <a href="#" class="case-study-link">Case Study Coming Soon</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -680,7 +716,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Storage Tank Design</h3>
-                        <p>Desined storage tanks following API 650 standards for various industrial applications including oil & gas and chemical storage.</p>
+                        <p>API 650 storage tank design including shell course calculations, roof design, foundation considerations, and seismic analysis.</p>
+                        <a href="#" class="case-study-link">Case Study Coming Soon</a>
                     </div>
                 </div>
             </div>
@@ -690,26 +727,26 @@
     <!-- Enhanced Future Learning Section -->
     <section id="future">
         <div class="container">
-            <h2>Continuous Learning Path</h2>
+            <h2>Professional Development Path</h2>
             <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p style="margin-bottom: 2rem;">Committed to advancing engineering capabilities through continuous skill development and emerging technologies.</p>
+                <p style="margin-bottom: 2rem;">Continuously advancing engineering capabilities through strategic skill development and emerging technologies.</p>
                 
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>🔄 Computer-Aided Engineering</h3>
-                        <p>Enhancing hands-on expertise and expanding engineering knowledge through advanced computer-aided analysis (CAE) tools including ANSYS, Autodesk Nastran, and Autodesk CFD.</p>
+                        <h3>🔄 Advanced Engineering Simulation</h3>
+                        <p>Developing expertise in Computer-Aided Engineering (CAE) through practical application of ANSYS, Autodesk Nastran, and computational fluid dynamics for complex engineering validations.</p>
                     </div>
                     <div class="skill-category">
-                        <h3>🤖 AI & Automation</h3>
-                        <p>Learning Large Language Models (LLM), prompt engineering, and automation platforms to streamline engineering workflows and design optimization processes.</p>
+                        <h3>🤖 AI & Engineering Automation</h3>
+                        <p>Implementing AI-driven design optimization through Large Language Models and systematic prompt engineering to enhance engineering workflow efficiency and innovation.</p>
                     </div>
                     <div class="skill-category">
-                        <h3>💻 Technical Programming</h3>
-                        <p>Developing mechanical calculation and logic-based programming skills using MATLAB and similar platforms to enhance engineering analysis and automation capabilities.</p>
+                        <h3>💻 Technical Computational Programming</h3>
+                        <p>Advancing engineering analysis capabilities through MATLAB and computational programming for complex mechanical calculations and process automation.</p>
                     </div>
                     <div class="skill-category">
-                        <h3>🌐 Freelance Engineering</h3>
-                        <p>Available for part-time freelance projects (20-25 hours per week) to collaborate on global engineering challenges and expand professional network.</p>
+                        <h3>🌐 Global Engineering Collaboration</h3>
+                        <p>Available for part-time engineering projects (20-25 hours weekly) to address global engineering challenges and expand professional collaborative networks.</p>
                     </div>
                 </div>
             </div>
